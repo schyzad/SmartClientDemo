@@ -1,0 +1,8 @@
+    <DataSource  
+        ID="worldDS"  
+        serverType="sql"  
+        tableName="data_table"  
+       	autoDeriveSchema="true"
+    >  
+        
+    </DataSource>  

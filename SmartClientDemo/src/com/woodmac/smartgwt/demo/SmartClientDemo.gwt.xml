@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  When updating your version of GWT, you should also update this DTD reference,
+  so that your app can take advantage of the latest GWT module capabilities.
+-->
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.6.1//EN"
+  "file:////Users/shehzadnagi/workspace/Installers/SmartClientGWT/gwt-2.6.1/gwt-module.dtd">
+<module rename-to='smartclientdemo'>
+   <inherits name='com.google.gwt.user.User'/>
+    <inherits name="com.smartgwt.tools.SmartGwtTools"/>
+    <inherits name="com.smartgwtee.tools.Tools"/>
+    <inherits name="com.smartgwtee.SmartGwtEE"/>
+    <inherits name="com.google.gwt.logging.Logging"/>
+    <!-- <set-property name="gwt.logging.logLevel" value="FINE"/>          
+    <set-property name="gwt.logging.enabled" value="FALSE"/> -->  
+    
+    <!-- This handler sends log messages to the server, where they will be logged using the server side logging mechanism. -->     
+	<set-property name="gwt.logging.simpleRemoteHandler" value="DISABLED" />  
+	<!-- Logs by calling method GWT.log. These messages can only be seen in Development Mode in the DevMode window. -->
+  	<set-property name="gwt.logging.developmentModeHandler" value="DISABLED" />  
+  	<!-- These messages can only be seen in Development Mode in the DevMode window. -->
+  	<set-property name="gwt.logging.systemHandler" value="DISABLED" />
+  	<!-- Logs to the popup which resides in the upper left hand corner of application when this handler is enabled. -->
+  	<set-property name="gwt.logging.popupHandler" value="DISABLED" />
+  	<!-- Logs to the javascript console, which is used by Firebug Lite (for IE), Safari and Chrome. -->
+  	<set-property name="gwt.logging.consoleHandler" value="DISABLED"/> 
+  	<!-- Logs to the firebug console. -->
+  	<set-property name="gwt.logging.firebugHandler" value="DISABLED" /> 
+
+  <!-- Specify the app entry point class.                         -->
+  <entry-point class='com.woodmac.smartgwt.demo.client.SmartClientDemo'/>
+
+  <!-- Specify the paths for translatable code                    -->
+  <source path='client'/>
+  <source path='shared'/>
+
+  
+</module>
