@@ -1,0 +1,6 @@
+CREATE TABLE `data_table` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `type` varchar(45) DEFAULT NULL,
+  `data` varchar(10000) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=630003 DEFAULT CHARSET=latin1;
